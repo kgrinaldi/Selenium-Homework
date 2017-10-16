@@ -21,7 +21,7 @@ public class AppTestThree {
 	}
 
 	@Test(groups = {"p1", "Sign In"})
-	public void testSignIn() {
+	public void testBrowseProduct() {
 		chrome.get(website);
 
 		//Click Link to View a Product
