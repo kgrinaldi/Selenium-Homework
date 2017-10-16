@@ -13,12 +13,8 @@ import org.testng.annotations.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest extends TestCase {
-public WebDriver chrome;
-	
+	public WebDriver chrome;
 	public String website = "http://automationpractice.com/index.php";
 
 	@BeforeClass
@@ -95,6 +91,27 @@ public WebDriver chrome;
 		//btnRegister.click();
 	}
 	
+	@Test(groups = {"p1", "Sign In"})
+	public void testSignIn() {
+		chrome.get(website);
+		
+		//Get to Sign In screen
+		WebElement btnSignIn = chrome.findElement(By.className("header_user_info"));
+		btnSignIn.click();
+		
+		//Sign In
+		WebElement txtEmail = chrome.findElement(By.id("email"));
+		WebElement txtPassword = chrome.findElement(By.id("passwd"));
+		WebElement btnLogin = chrome.findElement(By.id("SubmitLogin"));
+		
+		txtEmail.sendKeys("kgrinaldi@gmail.com");
+		txtPassword.sendKeys("Gdayfn-2008");
+		btnLogin.click();
+		
+		//Sign Out
+		WebElement btnLogout = chrome.findElement(By.className("logout"));
+		btnLogout.click();
+	}
 	
 	
 	@AfterClass
