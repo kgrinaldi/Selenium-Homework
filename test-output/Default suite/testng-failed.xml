@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="HW.Work.AppTest">
+      <class name="HW.Work.AppTestThree">
         <methods>
-          <include name="Before"/>
-          <include name="testLoad"/>
+          <include name="testSignIn"/>
           <include name="After"/>
+          <include name="Before"/>
         </methods>
-      </class> <!-- HW.Work.AppTest -->
+      </class> <!-- HW.Work.AppTestThree -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
