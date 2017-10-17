@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22482" started-at="2017-10-16T23:39:53Z" finished-at="2017-10-16T23:40:16Z">
+  <suite name="Default suite" duration-ms="22364" started-at="2017-10-17T01:12:52Z" finished-at="2017-10-17T01:13:14Z">
     <groups>
       <group name="p1">
-        <method signature="AppTestFour.testCart()[pri:0, instance:HW.Work.AppTestFour@1c7cbad]" name="testCart" class="HW.Work.AppTestFour"/>
+        <method signature="AppTestFive.testSearch()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="testSearch" class="HW.Work.AppTestFive"/>
       </group> <!-- p1 -->
       <group name="Add to Cart">
-        <method signature="AppTestFour.testCart()[pri:0, instance:HW.Work.AppTestFour@1c7cbad]" name="testCart" class="HW.Work.AppTestFour"/>
+        <method signature="AppTestFive.testSearch()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="testSearch" class="HW.Work.AppTestFive"/>
       </group> <!-- Add to Cart -->
     </groups>
-    <test name="Default test" duration-ms="22482" started-at="2017-10-16T23:39:53Z" finished-at="2017-10-16T23:40:16Z">
-      <class name="HW.Work.AppTestFour">
-        <test-method status="PASS" signature="Before()[pri:0, instance:HW.Work.AppTestFour@1c7cbad]" name="Before" is-config="true" duration-ms="6532" started-at="2017-10-16T16:39:53Z" finished-at="2017-10-16T16:40:00Z">
+    <test name="Default test" duration-ms="22364" started-at="2017-10-17T01:12:52Z" finished-at="2017-10-17T01:13:14Z">
+      <class name="HW.Work.AppTestFive">
+        <test-method status="PASS" signature="Before()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="Before" is-config="true" duration-ms="5790" started-at="2017-10-16T18:12:52Z" finished-at="2017-10-16T18:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Before -->
-        <test-method status="PASS" signature="testCart()[pri:0, instance:HW.Work.AppTestFour@1c7cbad]" name="testCart" duration-ms="14561" started-at="2017-10-16T16:40:00Z" finished-at="2017-10-16T16:40:14Z">
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="testSearch" duration-ms="15286" started-at="2017-10-16T18:12:58Z" finished-at="2017-10-16T18:13:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCart -->
-        <test-method status="PASS" signature="After()[pri:0, instance:HW.Work.AppTestFour@1c7cbad]" name="After" is-config="true" duration-ms="1319" started-at="2017-10-16T16:40:14Z" finished-at="2017-10-16T16:40:16Z">
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="After()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="After" is-config="true" duration-ms="1192" started-at="2017-10-16T18:13:13Z" finished-at="2017-10-16T18:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-      </class> <!-- HW.Work.AppTestFour -->
+      </class> <!-- HW.Work.AppTestFive -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
