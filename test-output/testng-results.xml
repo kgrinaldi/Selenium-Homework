@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22364" started-at="2017-10-17T01:12:52Z" finished-at="2017-10-17T01:13:14Z">
+  <suite name="Default suite" duration-ms="33990" started-at="2017-10-17T01:30:30Z" finished-at="2017-10-17T01:31:04Z">
     <groups>
       <group name="p1">
-        <method signature="AppTestFive.testSearch()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="testSearch" class="HW.Work.AppTestFive"/>
+        <method signature="AppTest.testRegister()[pri:0, instance:null(HW.Work.AppTest)]" name="testRegister" class="HW.Work.AppTest"/>
       </group> <!-- p1 -->
-      <group name="Add to Cart">
-        <method signature="AppTestFive.testSearch()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="testSearch" class="HW.Work.AppTestFive"/>
-      </group> <!-- Add to Cart -->
+      <group name="Register">
+        <method signature="AppTest.testRegister()[pri:0, instance:null(HW.Work.AppTest)]" name="testRegister" class="HW.Work.AppTest"/>
+      </group> <!-- Register -->
     </groups>
-    <test name="Default test" duration-ms="22364" started-at="2017-10-17T01:12:52Z" finished-at="2017-10-17T01:13:14Z">
-      <class name="HW.Work.AppTestFive">
-        <test-method status="PASS" signature="Before()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="Before" is-config="true" duration-ms="5790" started-at="2017-10-16T18:12:52Z" finished-at="2017-10-16T18:12:58Z">
+    <test name="Default test" duration-ms="33990" started-at="2017-10-17T01:30:30Z" finished-at="2017-10-17T01:31:04Z">
+      <class name="HW.Work.AppTest">
+        <test-method status="PASS" signature="Before()[pri:0, instance:null(HW.Work.AppTest)]" name="Before" is-config="true" duration-ms="5756" started-at="2017-10-16T18:30:30Z" finished-at="2017-10-16T18:30:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Before -->
-        <test-method status="PASS" signature="testSearch()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="testSearch" duration-ms="15286" started-at="2017-10-16T18:12:58Z" finished-at="2017-10-16T18:13:13Z">
+        <test-method status="PASS" signature="testRegister()[pri:0, instance:null(HW.Work.AppTest)]" name="testRegister" duration-ms="27112" started-at="2017-10-16T18:30:35Z" finished-at="2017-10-16T18:31:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearch -->
-        <test-method status="PASS" signature="After()[pri:0, instance:HW.Work.AppTestFive@1c7cbad]" name="After" is-config="true" duration-ms="1192" started-at="2017-10-16T18:13:13Z" finished-at="2017-10-16T18:13:14Z">
+        </test-method> <!-- testRegister -->
+        <test-method status="PASS" signature="After()[pri:0, instance:null(HW.Work.AppTest)]" name="After" is-config="true" duration-ms="1050" started-at="2017-10-16T18:31:03Z" finished-at="2017-10-16T18:31:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
-      </class> <!-- HW.Work.AppTestFive -->
+      </class> <!-- HW.Work.AppTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

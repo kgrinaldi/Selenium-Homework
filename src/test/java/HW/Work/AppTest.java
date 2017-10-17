@@ -25,7 +25,7 @@ public class AppTest extends TestCase {
 	}
 	
 	@Test(groups = {"p1", "Register"})
-	public void testRegister() {
+	public void testRegister() throws InterruptedException {
 		chrome.get(website);
 		
 		//Get to Sign In screen
@@ -37,18 +37,18 @@ public class AppTest extends TestCase {
 		//Enter email to begin the registration process
 		WebElement txtRegister = chrome.findElement(By.id("email_create"));
 		WebElement btnCreate = chrome.findElement(By.id("SubmitCreate"));
-		txtRegister.sendKeys("kgrinaldi@gmail.com");
+		txtRegister.sendKeys("madeupemail@gmail.com");
 		btnCreate.click();
 		
-		//Enter additional info for registration process
+		Thread.sleep(5000);
+		
+		//Enter additional info for registration process		
 		Select birthdate;
 		Select state;
 		
-		//WebElement btnGender = chrome.findElement(By.id("id_gender1"));
-		
-		WebElement txtFirst = chrome.findElement(By.id("customer_firstname"));
-		
-		/*WebElement txtLast = chrome.findElement(By.id("customer_lastname"));
+		WebElement btnGender = chrome.findElement(By.id("uniform-id_gender1"));
+		WebElement txtFirst = chrome.findElement(By.name("customer_firstname"));
+		WebElement txtLast = chrome.findElement(By.id("customer_lastname"));
 		WebElement txtPassword = chrome.findElement(By.id("passwd"));
 		WebElement menuDays = chrome.findElement(By.id("days"));
 		WebElement menuMonths = chrome.findElement(By.id("months"));
@@ -61,9 +61,9 @@ public class AppTest extends TestCase {
 		WebElement txtPostal = chrome.findElement(By.id("postcode"));
 		WebElement txtCell = chrome.findElement(By.id("phone_mobile"));
 		WebElement txtAlias = chrome.findElement(By.id("alias"));
-		WebElement btnRegister = chrome.findElement(By.linkText("Register"));
-		/*
-		//btnGender.click();
+		WebElement btnRegister = chrome.findElement(By.id("submitAccount"));
+		
+		btnGender.click();
 		txtFirst.sendKeys("Kevin");
 		txtLast.sendKeys("Rinaldi");
 		txtPassword.sendKeys("Mei17");
@@ -76,8 +76,6 @@ public class AppTest extends TestCase {
 		menuYears.click();
 		birthdate = new Select(menuYears);
 		birthdate.selectByIndex(20);
-		txtFirstTwo.sendKeys("Kevin");
-		txtLastTwo.sendKeys("Rinaldi");
 		txtAddress.sendKeys("123 Fake St");
 		txtCity.sendKeys("Springfield");
 		menuState.click();
@@ -86,31 +84,9 @@ public class AppTest extends TestCase {
 		txtPostal.sendKeys("12345");
 		txtCell.sendKeys("(123)-456-7890");
 		txtAlias.sendKeys("something@gmail.com");
-		*/
+		
 		//Complete Registration
 		//btnRegister.click();
-	}
-	
-	@Test(groups = {"p1", "Sign In"})
-	public void testSignIn() {
-		chrome.get(website);
-		
-		//Get to Sign In screen
-		WebElement btnSignIn = chrome.findElement(By.className("header_user_info"));
-		btnSignIn.click();
-		
-		//Sign In
-		WebElement txtEmail = chrome.findElement(By.id("email"));
-		WebElement txtPassword = chrome.findElement(By.id("passwd"));
-		WebElement btnLogin = chrome.findElement(By.id("SubmitLogin"));
-		
-		txtEmail.sendKeys("kgrinaldi@gmail.com");
-		txtPassword.sendKeys("Gdayfn-2008");
-		btnLogin.click();
-		
-		//Sign Out
-		WebElement btnLogout = chrome.findElement(By.className("logout"));
-		btnLogout.click();
 	}
 	
 	
