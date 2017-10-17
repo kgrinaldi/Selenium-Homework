@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-public class AppTest extends TestCase {
+public class testRegister extends TestCase {
 	public WebDriver chrome;
 	public String website = "http://automationpractice.com/index.php";
 
@@ -25,7 +25,7 @@ public class AppTest extends TestCase {
 	}
 	
 	@Test(groups = {"p1", "Register"})
-	public void testRegister() throws InterruptedException {
+	public void Register() throws InterruptedException {
 		chrome.get(website);
 		
 		//Get to Sign In screen

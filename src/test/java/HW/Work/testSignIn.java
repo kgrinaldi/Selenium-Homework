@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-public class AppTestTwo {
+public class testSignIn {
 	public String website = "http://automationpractice.com/index.php";
 	public WebDriver chrome;
 	
@@ -25,7 +25,7 @@ public class AppTestTwo {
 	}
 	
 	@Test(groups = {"p1", "Sign In"})
-	public void testSignIn() {
+	public void SignIn() {
 		chrome.get(website);
 		
 		//Get to Sign In screen

@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class AppTestFour {
+public class testCart {
 	public String website = "http://automationpractice.com/index.php";
 	public WebDriver chrome;
 	
@@ -20,7 +20,7 @@ public class AppTestFour {
 	}
 	
 	@Test(groups = {"p1", "Add to Cart"})
-	public void testCart() {
+	public void Cart() {
 		chrome.get(website);
 		
 		//Go to Product Page
